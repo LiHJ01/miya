@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery-1.12.0.js"></script>
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <link rel="stylesheet" href="css/xiangqing.css"/>
+	    <script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	      	$(function(){
+	      		$(window).scroll(function(){
+	      			if($(document).scrollTop()>=300){
+	      				$(".digbu").css("display","none");
+	      			}else{
+	      				$(".digbu").css("display","block");
+	      			}
+	      		})
+	      		$(".diancuo").on("click",function(){
+	      			$(".xmeng").css("display","none");
+	      		})
+	      		$(".kouwei").on("click",function(){
+	      			$(".xmeng").css("display","block");
+	      			$(".dbaniu").css("display","block");
+	      			$(".er_dbaniu").css("display","none");
+	      		})
+	      		$(".jrgw_01").on("click",function(){
+	      			$(".xmeng").css("display","block");
+	      			$(".dbaniu").css("display","none");
+	      			$(".er_dbaniu").css("display","block");
+	      		})
+	      		$(".changshu").on("click",function(){
+	      			$(".cpxin").css("display","block");
+	      		})
+	      		$(".qddingbu").on("click",function(){
+	      			$(".cpxin").css("display","none");
+	      		})
+	      	})
+	    </script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav xq_01">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">详情</h1>
+		</header>
+		<div class="mui-content">
+		    <div id="slider" class="mui-slider" >
+		      <div class="mui-slider-group mui-slider-loop">
+		        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		        <div class="mui-slider-item mui-slider-item-duplicate">
+		          <a href="#">
+		            <img src="img/niuzai_04.jpg">
+		          </a>
+		        </div>
+		        <!-- 第一张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="img/niuzai_01.jpg">
+		          </a>
+		        </div>
+		        <!-- 第二张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="img/niuzai_02.jpg">
+		          </a>
+		        </div>
+		        <!-- 第三张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="img/niuzai_03.jpg">
+		          </a>
+		        </div>
+		        <!-- 第四张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="img/niuzai_04.jpg">
+		          </a>
+		        </div>
+		        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		        <div class="mui-slider-item mui-slider-item-duplicate">
+		          <a href="#">
+		            <img src="img/niuzai_01.jpg">
+		          </a>
+		        </div>
+		      </div>
+		      <div class="mui-slider-indicator">
+		        <div class="mui-indicator mui-active"></div>
+		        <div class="mui-indicator"></div>
+		        <div class="mui-indicator"></div>
+		        <div class="mui-indicator"></div>
+		      </div>
+		    </div>
+		    <div class="slider_01">
+		    	<p style="color: black;font-size: 15px;">Avon/雅芳艳阳防晒隔离乳75克 SPF30+/PA+++ 清爽防晒不油腻</p>
+		    	<p class="pjk"><span style="color: red;font-size: 18px;display: inline-block;"><span style="display:inline-block;padding-top: 5px;">￥</span><span style="font-size: 24px;margin-left: -3px;">49</span></span><span class="slider_02">年终特惠</span></p>
+		    	<p>价格：<span style="text-decoration: line-through;">￥59</span></p>
+		    	<p class="pjk_01">
+		    		<span>快递：0.00</span>
+		    		<span style="text-align: center;">月销量：2件</span>
+		    		<span style="text-align: right;margin-right: 10px;">湖南长沙</span>
+		    	</p>
+		    </div>
+		    <div class="slider_03">
+		    	<div class="dier_01">
+		    		<div class="dier_02" style="border-bottom: solid 1px #C7C7CC;">
+		    			<p class="img_01" style="margin-bottom: 1px;"><img src="img/yhlq.jpg"/><span>领取优惠券</span></p>
+		    			<p class="img_01"><img src="img/yhlq.jpg"/><span>领取优惠券</span></p>
+		    			<span class="lqu">领取</span>
+		    		</div>
+		    		<div class="san_01">
+			    		<p style="margin-bottom: 1px;"><span class="cuxiao">促销</span>满88元，享部分地区包邮</p>
+			    		<p><span class="cuxiao">积分</span>购买可得13积分</p>
+			    		<span class="cuxiao_01">...</span>
+			    	</div>
+		    	</div>
+		    </div>
+		    <div class="xuanze kouwei">
+		    	<span class="xuanze_01">请选择口味</span>
+		    	<span class="xuanze_02">...</span>
+		    </div>
+		    <div class="xuanze changshu">
+		    	<span class="xuanze_01">产品参数</span>
+		    	<span class="xuanze_02">...</span>
+		    </div>
+		    <div class="pingjia" style="margin-bottom: 50px;">
+		    	<p class="pingjia_01">商品评价(98666)</p>
+		    	<div class="pingjia_02">
+		    		<span>快递不错(9092)</span>
+		    		<span>味道不错(9092)</span>
+		    		<span>划算(9092)</span>
+		    		<span>口味(9092)</span>
+		    		<span>质量好(9092)</span>
+		    		<span>人群(9092)</span>
+		    	</div>
+		    	<div class="pingjia_03">
+		    		<p class="toxiang"><img src="img/niuzai_03.jpg" style="border-radius: 100%;width: 25px;height: 25px;"/><span>t***3</span></p>
+		    		<p class="toxiang_01">此用户没有填写评论！</p>
+		    		<p class="toxiang_02">2018-02-06 某宝：嘎嘎的好的噶很多</p>
+		    	</div>
+		    	<div class="chakan"><span>查看更多评价</span></div>
+		    </div>
+		    <div class="digbu">
+		    	<p class="digbu_01 digbu_left"><span class="mui-icon mui-icon-back"></span></p>
+		    	<p class="digbu_02"><img src="img/360.png"/><span style="margin-left: 5px;">App新人领388元大礼包！</span></p>
+		    	<p class="digbu_01 digbu_rigt"><span class="mui-icon mui-icon-home"></span></p>
+		    </div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active">
+		        <span class="mui-icon mui-icon-chatbubble"></span>
+		        <span class="mui-tab-label">客服</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-home"></span>
+		        <span class="mui-tab-label">进店</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-download"></span>
+		        <span class="mui-tab-label">收藏</span>
+		    </a>
+		    <a class="mui-tab-item jrgw" style="width: 7px;background-color: #FF9500;">
+		        <span class="mui-tab-label">加入购物车</span>
+		    </a>
+		    <a class="mui-tab-item jrgw jrgw_01" style="width: 7px;background-color: #FF0036;">
+		        <span class="mui-tab-label">立即购买</span>
+		    </a>
+		</nav>
+		<!--蒙版-->
+		<div class="xmeng">
+			<div class="xmeng_01">
+				<div class="diancuo"><span class="mui-icon mui-icon-closeempty"></span></div>
+				<div class="toyi">
+					<div class="di_ig">
+						<img src="img/niuzai_01.jpg"/>
+					</div>
+					<div class="di_ig_01">
+						<p style="color: red;font-size: 18px;">￥279</p>
+						<p>库存 159件</p>
+						<p>已选择：【尊享版】香槟金</p>
+					</div>
+				</div>
+				<div class="toer">
+					<div class="toer_01">
+						<p>配送区域(配送地可能会影响库存)</p>
+						<p>
+							<span class="mui-icon mui-icon-location"></span>
+							<span>广西壮族自治区 南宁市 兴业区 民生街道</span>
+							<span class="mui-icon mui-icon-forward" style="float: right;"></span>
+						</p>
+						<p>24:00前付款，承诺2月9日送达</p>
+					</div>
+					<div class="toer_02">
+						<p>颜色分类</p>
+						<p>
+							<span class="zunx">【尊享版】香槟金</span>
+							<span class="zunx">【尊享版】香槟金</span>
+						</p>
+					</div>
+					<div class="toer_03">
+						<span>购买数量</span>
+						<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='10'>
+						    <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+						    <input class="mui-input-numbox" type="number" />
+						    <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+						</div>
+					</div>
+				</div>
+				<div class="dbaniu">
+					<ul class="dbaniu_01">
+						<li>加入购物车</li>
+						<li>立即购买</li>
+					</ul>
+				</div>
+				<div class="er_dbaniu">
+					确定
+				</div>
+			</div>
+		</div>
+	    <div class="cpxin">
+	    	<div class="cpxin_01">
+	    		<div class="cpxin_02">
+	    		     <p class="jbxx">基本信息</p>
+	    		     <div class="cpxin_div">
+	    		     	<span>保修期</span>
+	    		     	<span>12个月</span>
+	    		     </div>
+	    		     <div class="cpxin_div">
+	    		     	<span>品牌</span>
+	    		     	<span>Midea/美的</span>
+	    		     </div>
+	    		     <div class="cpxin_div">
+	    		     	<span>型号</span>
+	    		     	<span>MB-WFS4029</span>
+	    		     </div>
+	    		     <div class="cpxin_div">
+	    		     	<span>容量</span>
+	    		     	<span>4L</span>
+	    		     </div>
+	    		     <div class="cpxin_div">
+	    		     	<span>智能类型</span>
+	    		     	<span>其他</span>
+	    		     </div>
+	    		     <div class="cpxin_div">
+	    		     	<span>能效等级</span>
+	    		     	<span>二级二级二级二级二级二级二级二级二级</span>
+	    		     </div>
+	    		     <div class="cpxin_div">
+	    		     	<span>采购地</span>
+	    		     	<span>中国大陆</span>
+	    		     </div>
+	    		     <div class="cpxin_div">
+	    		     	<span>保修期</span>
+	    		     	<span>12个月</span>
+	    		     </div>
+	    		     <div class="cpxin_div">
+	    		     	<span>保修期</span>
+	    		     	<span>12个月</span>
+	    		     </div>
+	    	    </div>
+	    		<div class="qddingbu">确定</div>
+	    	</div>
+	    </div>
+	</body>
+</html>

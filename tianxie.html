@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="css/tianxie.css"/>
+		<script src="js/jquery-1.12.0.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid diyi">
+			<div class="row kong">
+				<p class="glyphicon glyphicon-menu-left col-xs-1 diyi_01"></p>
+				<p class="col-xs-3 diyi_02">关闭</p>
+				<p class="col-xs-8 text-center diyi_03">详情</p>
+			</div>
+		</div>
+		<div class="container-fluid tbzc_01 text-center">
+			<button class="btn btn-default fanhui" type="submit">返回</button>
+			<p class="tzc">淘宝注册</p>
+		</div>
+		<div class="container-fluid tianxie">
+			<p>为了你的账户安全请填写一个手机号完成验证</p>
+		</div>
+		<div class="form-control-static xuandz">
+			<ul class="nav nav-tabs guojia">
+				<li>国家/地区</li>
+				<li class="gj_01">中国大陆(+86)</li>
+				<li class="glyphicon glyphicon-menu-down pull-right gj_02"></li>
+			</ul>
+			<ul class="nav nav-tabs guojia" style="border: none;">
+				<li>手机号</li>
+				<li class="sjh"><input type="text" class="zgsj"/></li>
+			</ul>
+		</div>
+		<div class="but_01">
+			<button class="but_02">确定</button>
+		</div>
+		<div class="container-fluid text-center xieyi">
+			<p>继续操作即视为同意<a href="#">淘宝平台服务协议</a>、<a href="#">法律声明及隐私权政策</a>和<a href="#">支付宝协议</a><br/>系统将同步为您创建支付宝账户</p>
+		</div>
+	    <div class="xieyi_01">
+	         <div class="xieyi_02">
+	             <p class="xieyi_03">输入有误,请重新输入!</p>
+	             <p class="xieyi_04">确定</p>
+	         </div>
+	    </div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var ze = /^[1-3]\d{10}$/;
+			$(".zgsj").on("blur",function(){
+				if(ze.test($(".zgsj").val())==false){
+					$(".xieyi_01").css("display","block");
+				}else{
+					$(".xieyi_01").css("display","none");
+				}
+			})
+			$(".xieyi_04").on("click",function(){
+				$(".xieyi_01").css("display","none");
+				$(".zgsj").val("");
+			})
+			$(".fanhui").on("click",function(){
+				window.history.go(-1);
+			})
+		})
+	</script>
+</html>
