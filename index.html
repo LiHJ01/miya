@@ -468,10 +468,10 @@
 				}else{
 					$(".qbhd_02").css("display","none");
 				}
-				$(".qbhd_02").on("click",function(){
-					$(document).scrollTop(0);
-				})
 			})
+            $(".qbhd_02").on("click",function(){
+            	$("document,html").animate({scrollTop:0},500);
+            })
 		})
 //		轮播图
 		window.onload = function(){
